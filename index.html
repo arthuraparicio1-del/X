@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>x_herogravity | Space Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="space-bg"></div>
+
+    <header>
+        <div class="logo"><span>x_</span>herogravity</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#setup">Setup</a>
+            <a href="#socials">Socials</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="live-badge">
+            <span class="pulse-dot"></span> PS5 GRIND 🚀
+        </div>
+        <h1>Welcome to <span class="highlight">x_herogravity</span></h1>
+        <p>Fortnite creator pushing the limits. High-tier plays, neon vibes, and zero gravity.</p>
+        
+        <div class="cta-buttons">
+            <a href="https://youtube.com/@x_herogravity" target="_blank" class="btn yt-btn">
+                <i class="fa-brands fa-youtube"></i> YouTube
+            </a>
+            <a href="https://tiktok.com/@x_herogravity" target="_blank" class="btn tt-btn">
+                <i class="fa-brands fa-tiktok"></i> TikTok
+            </a>
+            <a href="https://discord.gg/yourlink" target="_blank" class="btn discord-btn">
+                <i class="fa-brands fa-discord"></i> Discord
+            </a>
+        </div>
+    </section>
+
+    <section id="setup" class="setup-section">
+        <h2>⚡ Gaming Setup</h2>
+        <p>The weapon of choice for every Victory Royale.</p>
+        
+        <div class="setup-card">
+            <i class="fa-solid fa-gamepad"></i>
+            <h3>PlayStation 5</h3>
+            <p>Powered by the DualSense Controller for ultimate control.</p>
+        </div>
+    </section>
+
+    <section id="socials" class="social-section">
+        <h2>Connect With The Crew</h2>
+        <p>Never miss a clip or community event.</p>
+        
+        <div class="social-cards">
+            <a href="https://youtube.com/@x_herogravity" target="_blank" class="social-card youtube">
+                <i class="fa-brands fa-youtube"></i>
+                <h3>YouTube</h3>
+                <p>Epic long-form highlights & shorts</p>
+            </a>
+            <a href="https://tiktok.com/@x_herogravity" target="_blank" class="social-card tiktok">
+                <i class="fa-brands fa-tiktok"></i>
+                <h3>TikTok</h3>
+                <p>Daily viral Fortnite moments</p>
+            </a>
+            <a href="https://discord.gg/yourlink" target="_blank" class="social-card discord">
+                <i class="fa-brands fa-discord"></i>
+                <h3>Discord</h3>
+                <p>Squad up with the community</p>
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-card">
+            <h2>About The Mission</h2>
+            <p>Hey! I'm <strong>x_herogravity</strong>. Playing Fortnite on PS5, creating insane clips, and building the ultimate community. Thanks for stopping by!</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 x_herogravity. All rights reserved. Zero limits.</p>
+    </footer>
+
+    <script>
+        const spaceBg = document.getElementById('space-bg');
+        const numberOfStars = 90;
+
+        for (let i = 0; i < numberOfStars; i++) {
+            const star = document.createElement('div');
+            star.classList.add('star');
+            
+            const x = Math.random() * window.innerWidth;
+            const y = Math.random() * window.innerHeight;
+            const size = Math.random() * 3.5;
+            
+            star.style.left = `${x}px`;
+            star.style.top = `${y}px`;
+            star.style.width = `${size}px`;
+            star.style.height = `${size}px`;
+            
+            const duration = 4 + Math.random() * 8;
+            star.style.animationDuration = `${duration}s`;
+            
+            spaceBg.appendChild(star);
+        }
+    </script>
+</body>
+</html>
